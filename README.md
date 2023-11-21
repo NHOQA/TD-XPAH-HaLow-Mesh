@@ -13,4 +13,5 @@ To the best of my knowledge this is the current method based off discord chats a
 7. Edit br0 IP address at /etc/systemd/network/16-br0_up.network to ensure each of your bridges have a unique IP (default is 192.168.1.1)
 8. Run sudo systemctl remove wpa_supplicant@wlan1.service
 9. Run sudo systemctl restart accesspoint@wlan1.service and sudo systemctl restart wpa_supplicant
-10. Wait ~1-2 minutes, then attempt a ping between nodes
+10. maybe also use sudo systemctl restart systemd-networkd
+11. Wait ~1-2 minutes, then attempt a ping between nodes
