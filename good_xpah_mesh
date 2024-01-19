@@ -1,0 +1,23 @@
+!/bin/bash
+
+#systemctl restart systemd-networkd
+systemctl stop wpa_supplicant
+systemctl stop NetworkManager
+
+#INTERFACE=wlan1
+INTERFACE=wlp1s0u1u1
+MESH_NAME=natak_mesh
+IP_ADDR=192.168.200.1/24
+
+
+ifconfig $INTERFACE down
+sysctl -w net.ipv4.ip_forward=1
+sysctl -p
+iw reg set "US"
+iw dev $INTERFACE set type managed
+iw dev $INTERFACE set 4addr on
+iw dev $INTERFACE set type mesh
+iw dev $INTERFACE set meshid $MESH_NAME
+iw dev $INTERFACE set channel 36
+ip addr add $IP_ADDR dev $INTERFACE
+ifconfig $INTERFACE up

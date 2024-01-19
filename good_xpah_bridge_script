@@ -1,0 +1,20 @@
+# this script is to add eth0 and wlan1 to bridge br0
+
+INTERFACE=wlp1s0u1u1 #xpah interface 
+ETH=end0 #ethernet interface
+IP_ADDR=192.168.200.1/24  #adjust to whatever IP youre using on xpah interface
+#create bridge
+sudo brctl addbr br0
+
+#assign IP to bridge, in this case the ip of the mesh node
+#sudo ip address add 192.168.200.1/24 dev br0
+sudo ip address add $IP_ADDR dev br0
+#bring bridge up
+sudo ip link set dev br0 up
+#add eth ethernet port to bridge
+sudo brctl addif br0 $ETH # eth0
+#add mesh connection to bridge
+sudo brctl addif br0 $INTERFACE # wlan1
+#delete ip from mesh node to avoid conflict
+#sudo ip address del 192.168.200.1/24 dev $INTERFACE # wlan1
+sudo ip address del $IP_ADDR dev $INTERFACE
