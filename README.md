@@ -1,9 +1,13 @@
 Notes:
-Requires full desktop version of latest 64 bit raspbian to work. unknown why lite ersion doesnt work. 
-install drivers per teledatics docs. use mesh script to get mesh functioning.
-systemd-networkd file to get dhcp on eth0
-now need to be able to ping across mesh from eth0, probably need bridge
+Requires full desktop version of latest 64 bit raspbian to work. unknown why lite version doesnt work. I'm using a set of 4 gb pi4
 
-once mesh is up and hardware portable, start going through failure modes and procedures for them
-then need to set up security/encryption
-build out final script to handle install
+Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/
+Install bridge-utils package "apt-get install bridge-utils" 
+
+1. create dhcp server for bridge. the file "good xpah dchp" should be placed in etc/systemd/network  mine is named end0.network
+2. adjust IP addresses in mesh script and bridge script
+3. run mesh script
+4. run bridge script
+
+At this point you should be able to connect your EUD to the pi via ethernet connection and ping from eud to other nodes on your mesh
+I am accomplishing this with a USB-C to Ethernet adapter https://www.amazon.com/gp/product/B09Q5XC7T9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
