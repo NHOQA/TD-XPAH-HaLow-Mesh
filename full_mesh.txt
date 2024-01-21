@@ -2,7 +2,8 @@
 #this is the mesh and bridge scripts combined. successfully tested individually
 #seems to require full desktop version of raspbian, "lite" does not work, unknown why
 #before running script, you will need
-#1.
+#1. DHCP config file installed (in file list of this github)
+#2. bridge-utils installed
 
 #stop some processes that interfere with what we're trying to do
 systemctl stop wpa_supplicant
