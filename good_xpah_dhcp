@@ -1,10 +1,10 @@
 [Match]
-#Name=eth0
+#Name=eth0  #originally had DHCP running on ehternet connection, since thats bridged, moved dhcp target to bridge
 #Name=end0
 Name=br0  #we want dhcp to run on bridge
 
 [Network]
-Address=192.168.200.1
+Address=192.168.200.1 #adjust to whatever your IP scheme is going to be. should match up with your mesh IP scheme. had issues with that.
 DHCPServer=true
 IPMasquerade=ipv4
 
