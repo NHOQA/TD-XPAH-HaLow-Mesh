@@ -6,7 +6,7 @@ Install bridge-utils package "apt-get install bridge-utils"
 
 1. Create dhcp server for bridge. the file etho.network should be placed in etc/systemd/network  
 2. Full_mesh.sh contents should be saved on pi. adjust mesh name, interface names and IP address to fit your wishes
-3. Run full_mesh.sh
+3. Run full_mesh.sh (wille need to run "sudo chmod +x full_mesh.sh" first to make the script executable
 4. Plug EUD into pi via ethernet port.
 
 At this point you should be able to connect your EUD to the pi via ethernet connection and ping from eud to other nodes on your mesh (i used termux app and "ping" command)
