@@ -24,14 +24,13 @@ iw dev $INTERFACE set 4addr on
 iw dev $INTERFACE set type mesh
 iw dev $INTERFACE set meshid $MESH_NAME
 #iw dev $INTERFACE set channel 36 #original channel setting from teledatics 908.5 MHZ w/ 1 MHz bandwidth
-iw dev $INTERFACE set channel 11 #this is 907.5 MHz w/ 1 MHz bandwidth should allow 30 dbm per reg get
-iwconfig $INTERFACE txpower 30   #adding this to increase tx power from stock 23dbm. may cause problems.
-#can just comment out to go back to default tx power
+#iw dev $INTERFACE set channel 11 #this is 907.5 MHz w/ 1 MHz bandwidth should allow 30 dbm per reg get
+iw dev $INTERFACE set channel 153 # using this instead of 36 to allow full 30 dbm tx power
 ip addr add $IP_ADDR dev $INTERFACE
 ifconfig $INTERFACE up
 echo 'Mesh Created'
 echo 'Waiting 5 Seconds'
-wait 5
+sleep 5
 # this section of the script is to create bridge add eth0 and wlan1 to that bridge, "br0" in this case
 
 #create bridge
