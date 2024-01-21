@@ -1,9 +1,10 @@
 #!/bin/bash
 #this is the mesh and bridge scripts combined. successfully tested individually
-#seems to require full desktop version of raspbian, "lite" does not work, unknown why
+#seems to require full 64 bit desktop version of raspbian, "lite" does not work, unknown why
 #before running script, you will need
 #1. DHCP config file installed (in file list of this github)
 #2. bridge-utils installed
+#3. TD_XPAH drivers installed per https://teledatics.com/docs/drivers/
 
 #stop some processes that interfere with what we're trying to do
 systemctl stop wpa_supplicant
