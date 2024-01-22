@@ -4,7 +4,7 @@ Requires full desktop version of latest 64 bit raspbian to work. unknown why lit
   -Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/  <br>
   -Install bridge-utils package "apt-get install bridge-utils" 
 
-Once thhose pre-requisites are done, set up Pi as follows
+Once those pre-requisites are done, set up Pi as follows
 
 1. Create dhcp server for bridge. the file eth0.network should be placed in etc/systemd/network  
 2. Full_mesh.sh contents should be saved on Pi. Adjust mesh name, interface names and IP address to fit your wishes
