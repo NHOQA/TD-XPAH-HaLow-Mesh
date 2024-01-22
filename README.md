@@ -9,8 +9,8 @@ Requires full desktop version of latest 64 bit raspbian to work. unknown why lit
 3. Run full_mesh.sh (will need to run "sudo chmod +x full_mesh.sh" first to make the script executable)
 4. Plug EUD into pi via ethernet port.
 
-At this point you should be able to connect your EUD to the pi via ethernet connection and ping from eud to other nodes on your mesh (i used termux app and "ping" command)
-I am accomplishing this with a USB-C to Ethernet adapter https://www.amazon.com/gp/product/B09Q5XC7T9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
+At this point you should be able to connect your EUD to the pi via ethernet connection and ping from EUD to other nodes on your mesh (we used termux app and "ping" command)
+The physical connection to the pi is done with a USB-C to Ethernet adapter https://www.amazon.com/gp/product/B09Q5XC7T9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
 
 todo: more testing to confirm I can repeat this, then range testing, then consolidate the mesh/bridge script and sort out how to get it to run automatically on start up. Then pretty
 up this page, get BoM. also need to get a basic 3d print case put together for field work
