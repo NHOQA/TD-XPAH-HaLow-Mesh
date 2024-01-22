@@ -6,8 +6,8 @@ Requires full desktop version of latest 64 bit raspbian to work. unknown why lit
 
 Once thhose pre-requisites are done, set up Pi as follows
 
-1. Create dhcp server for bridge. the file etho.network should be placed in etc/systemd/network  
-2. Full_mesh.sh contents should be saved on pi. adjust mesh name, interface names and IP address to fit your wishes
+1. Create dhcp server for bridge. the file eth0.network should be placed in etc/systemd/network  
+2. Full_mesh.sh contents should be saved on Pi. Adjust mesh name, interface names and IP address to fit your wishes
 3. Run full_mesh.sh (will need to run "sudo chmod +x full_mesh.sh" first to make the script executable)
 4. Plug EUD into pi via ethernet port.
 
