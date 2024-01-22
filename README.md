@@ -1,7 +1,7 @@
 Notes:
 Requires full desktop version of latest 64 bit raspbian to work. unknown why lite version doesnt work. I'm using a set of 4 gb pi4
 
-  -Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/ \n
+  -Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/  <br>
   -Install bridge-utils package "apt-get install bridge-utils" 
 
 1. Create dhcp server for bridge. the file etho.network should be placed in etc/systemd/network  
