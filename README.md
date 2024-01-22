@@ -1,5 +1,5 @@
 Notes:
-Requires full desktop version of latest 64 bit raspbian to work. unknown why lite version doesnt work. The Pi's used are all 4gb Pi 4
+Requires full desktop version of latest 64 bit raspbian to work. unknown why lite version doesnt work. The Pi's used are all 4gb Pi 4. HaLow units are TD-XPAH V1.5
 
   -Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/  <br>
   -Install bridge-utils package "apt-get install bridge-utils" 
