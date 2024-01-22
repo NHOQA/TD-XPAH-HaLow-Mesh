@@ -16,5 +16,6 @@ The physical connection to the pi is done with a USB-C to Ethernet adapter https
 
 Todo as of 1/22/24 
 -More testing to confirm the script is consistent  <br>
--Range testing, should involve gettnig a 3d printed case file together to allow easier movement  <br>
--Sort out how to get script to run automatically on start up. 
+-Range testing, should involve getting a 3d printed case file together to allow easier movement  <br>
+-Sort out how to get script to run automatically on start up. <br>
+-Look at Tx power. Per Teledatics max Tx power is 21 dbm. NRC7292 docs look to call out 30 dbm, and power meter seems to show 30dbm at antenna. Test how power varies with channel setting. Current channel of 153 seems to allow full 30dbm, but per NRC channel map docs, is 2 MHz bandwidth. For range considerations, would prefer 1 MHz with the 30 dbm Tx power. But the channels (in channel map doc) that will do that are 1-11, which do not seem to be working now.
