@@ -25,8 +25,7 @@ iw dev $INTERFACE set type managed
 iw dev $INTERFACE set 4addr on
 iw dev $INTERFACE set type mesh
 iw dev $INTERFACE set meshid $MESH_NAME
-#iw dev $INTERFACE set channel 36 #original channel setting from teledatics 908.5 MHZ w/ 1 MHz bandwidth
-iw dev $INTERFACE set channel 153 # using this instead of 36 to allow full 30 dbm tx power
+iw dev $INTERFACE set channel 36 #original channel setting from teledatics 908.5 MHZ w/ 1 MHz bandwidth
 ip addr add $IP_ADDR dev $INTERFACE
 ifconfig $INTERFACE up
 echo 'Mesh Created'
