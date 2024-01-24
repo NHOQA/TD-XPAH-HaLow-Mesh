@@ -1,0 +1,15 @@
+#place in etc/systemd/system
+#adjust execstart to your mesh script location and working directory to your user
+[Unit]
+Description=Start halow mesh on startup
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 30
+ExecStart=/home/natak/fullmesh.sh
+WorkingDirectory=/home/natak
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
