@@ -8,7 +8,7 @@ Once those pre-requisites are done, set up Pi as follows
 
 1. Create dhcp server for bridge. the file eth0.network should be placed in etc/systemd/network  
 2. Full_mesh.sh contents should be saved on Pi. Adjust mesh name, interface names and IP address to fit your wishes
-3. Place fullmesh.service in /etc/systemd/system
+3. Place fullmesh.service in /etc/systemd/system , adjust as needed
 4. Confirm permissions with "sudo chmod 744 ~/fullmesh.sh" and "sudo chmod 644 /etc/systemd/system/fullmesh.service"
 5. Reboot pi, wait 30 seconds for systemd service to run script. can check status w/ "sudo systemctl status fullmesh.service"
 6. Plug EUD into pi via ethernet port.
