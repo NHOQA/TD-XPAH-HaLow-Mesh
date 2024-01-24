@@ -10,8 +10,10 @@ Once those pre-requisites are done, set up Pi as follows
 2. Full_mesh.sh contents should be saved on Pi. Adjust mesh name, interface names and IP address to fit your wishes
 3. Place fullmesh.service in /etc/systemd/system , adjust as needed
 4. Confirm permissions with "sudo chmod 744 ~/fullmesh.sh" and "sudo chmod 644 /etc/systemd/system/fullmesh.service"
-5. Reboot pi, wait 30 seconds for systemd service to run script. can check status w/ "sudo systemctl status fullmesh.service"
-6. Plug EUD into pi via ethernet port.
+5. Restart systemd "sudo systemctl daemon-reload"
+6. Enable service "sudo systemctl enable fullmesh.service"
+7. Reboot pi, wait 30 seconds for systemd service to run script. can check status w/ "sudo systemctl status fullmesh.service"
+8. Plug EUD into pi via ethernet port.
 
 At this point you should be able to connect your EUD to the pi via ethernet connection and ping from EUD to other nodes on your mesh (we used termux app and "ping" command)
 The physical connection to the pi is done with a USB-C to Ethernet adapter https://www.amazon.com/gp/product/B09Q5XC7T9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
