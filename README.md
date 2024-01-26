@@ -19,6 +19,6 @@ At this point you should be able to connect your EUD to the pi via ethernet conn
 The physical connection to the pi is done with a USB-C to Ethernet adapter https://www.amazon.com/gp/product/B09Q5XC7T9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
 
 Todo as of 1/24/24  <br>
--More testing to confirm the script is consistent, start up time is long, need to see about reducing wait time on fullmesh.service  <br>
+-More testing to confirm the script is consistent  <br>
 -Range testing, should involve getting a 3d printed case file together to allow easier movement  <br>
 
