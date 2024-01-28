@@ -18,7 +18,9 @@ Once those pre-requisites are done, set up Pi as follows
 At this point you should be able to connect your EUD to the pi via ethernet connection and ping from EUD to other nodes on your mesh (we used termux app and "ping" command)
 The physical connection to the pi is done with a USB-C to Ethernet adapter https://www.amazon.com/gp/product/B09Q5XC7T9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
 
-Todo as of 1/24/24  <br>
--More testing to confirm the script is consistent  <br>
--Range testing, should involve getting a 3d printed case file together to allow easier movement  <br>
+Notes as of 1/28/24
+-For this current version, do not plug in EUD until after Pi has booted. I usually wait a minute or so before plugging in. Seems to be some kind of issue with the EUD picking up an IP quickly if it start plugged in. <br>
+- Per Teledatics, max power for this NRC7292 is only 21 dbm. Current ranges in city environment are ~ 500m LoS and ~100m NLoS between single nodes about 5' above ground. more testing and amps incoming
+- Have transmitted voice between nodes, need to sort out best way to get that integrated, currently just using a dedicated PTT app in play store.
+
 
