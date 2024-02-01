@@ -6,7 +6,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStartPre=/bin/sleep 30
+ExecStartPre=/bin/sleep 3
 ExecStart=/home/natak/fullmesh.sh
 WorkingDirectory=/home/natak
 Restart=on-failure
