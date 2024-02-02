@@ -25,10 +25,10 @@ Range between 2 nodes, one carried by me, another sitting on top of my house ~20
 - Max range comes on suddenly. not many packet drops or extended ping times before just cutting out completely. and that distance is pretty repeatable, i could go back and forth across it pretty repeatably with the second yellow marker at ~220m where connection would get problematic and the red marker at 225m being a pretty hard cutoff every time.
 
   Previous range testing seems to show ~100m between individual nodes when both are carried at ground level through the same terrain.
+  LoS reception is at least 500m, I had a cutout there on only long LoS test, but 50/50 was terrain issue.  Not bad for 21 dbm
 
 Notes as of 2/2/24 <br>
 - For this current version, do not plug in EUD until after Pi has booted. I usually wait a minute or so before plugging in. Seems to be some kind of issue with the EUD picking up an IP quickly if it start plugged in. <br>
-- Per Teledatics, max power for this NRC7292 is only 21 dbm. Current ranges in city environment are ~ 500m LoS and ~100m NLoS between single nodes about 5' above ground. more testing and amps incoming
 - Have transmitted voice between nodes, need to sort out best way to get that integrated, currently just using a dedicated PTT app in play store.
 - Still need to get a decent BOM built
 
