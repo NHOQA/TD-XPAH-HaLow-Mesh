@@ -18,9 +18,13 @@ Once those pre-requisites are done, set up Pi as follows
 At this point you should be able to connect your EUD to the pi via ethernet connection and ping from EUD to other nodes on your mesh (we used termux app and "ping" command)
 The physical connection to the pi is done with a USB-C to Ethernet adapter https://www.amazon.com/gp/product/B09Q5XC7T9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1 <br>
 
-Range
+Range <br>
 ![Screenshot_20240202-182151~2](https://github.com/NHOQA/TD-XPAH_Mesh/assets/74009174/6343a2c4-ce3f-4fde-83df-91218b7835b7)
-Range between 2 nodes, one carried by me, another sitting on top of my house ~20' up probably, through decently dense single family homes. <br>
+Range between 2 nodes, one carried by me, another sitting on top of my house ~20' up probably, through decently dense single family homes. Two notes <br>
+- There was a single pretty heavy packet drop (20+packets) at the first yellow marker (~190m) once that recovered, no more noticable drops until max range
+- Max range comes on suddenly. not many packet drops or extended ping times before just cutting out completely. and that distance is pretty repeatable, i could go back and forth across it pretty repeatably with the second yellow marker at ~220m where connection would get problematic and the red marker at 225m being a pretty hard cutoff every time.
+
+  Previous range testing seems to show ~100m between individual nodes when both are carried at ground level through the same terrain.
 
 Notes as of 2/2/24 <br>
 - For this current version, do not plug in EUD until after Pi has booted. I usually wait a minute or so before plugging in. Seems to be some kind of issue with the EUD picking up an IP quickly if it start plugged in. <br>
