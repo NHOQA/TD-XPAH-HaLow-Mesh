@@ -16,7 +16,11 @@ Once those pre-requisites are done, set up Pi as follows
 8. Plug EUD into pi via ethernet port.
 
 At this point you should be able to connect your EUD to the pi via ethernet connection and ping from EUD to other nodes on your mesh (we used termux app and "ping" command)
-The physical connection to the pi is done with a USB-C to Ethernet adapter https://www.amazon.com/gp/product/B09Q5XC7T9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
+The physical connection to the pi is done with a USB-C to Ethernet adapter https://www.amazon.com/gp/product/B09Q5XC7T9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1 <br>
+
+Range
+![Screenshot_20240202-182151~2](https://github.com/NHOQA/TD-XPAH_Mesh/assets/74009174/6343a2c4-ce3f-4fde-83df-91218b7835b7)
+Range between 2 nodes, one carried by me, another sitting on top of my house ~20' up probably, through decently dense single family homes. <br>
 
 Notes as of 2/2/24 <br>
 - For this current version, do not plug in EUD until after Pi has booted. I usually wait a minute or so before plugging in. Seems to be some kind of issue with the EUD picking up an IP quickly if it start plugged in. <br>
