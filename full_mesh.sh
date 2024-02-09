@@ -51,3 +51,4 @@ sudo brctl addif br0 $INTERFACE # wlan1
 #delete ip from mesh node to avoid conflict
 sudo ip address del $IP_ADDR dev $INTERFACE
 echo 'Bridge Online'
+sudo systemctl restart systemd-networkd
