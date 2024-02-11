@@ -35,5 +35,6 @@ Notes as of 2/2/24 <br>
 Notes 2/10/24 <br>
 - found I was still running the nodes on channel 153 ,that was 2 MHz bandwidth. Hurts range as I understand it as power is spread across more of the spectrum. Script here is CH. 36 which corresponds to 908.5 MHz with a 1 MHz bandwidth. rolling that to my nodes. originally thought ch 153 would allow more TX power.
 - Also, including a meshtastic node in this package. Currently meshtastic hardware is running on a private channel on medium/fast settings. need to sort out the frequencies its actually transmitting on so it does not overlap 908.5 and interfere with the HaLow transmission.
+- HaLow 908.5 MHz, Meshtastic ch 33 med/fast per https://meshtastic.org/docs/overview/radio-settings/ is 910.125 MHz. if we go to channel 104 freq. will be 927.875  how much spread will it have from this frequency?
 
 
