@@ -39,5 +39,3 @@ Notes 2/10/24 <br>
 
 Notes 2/11/24 <br>
 - with TD-XPAH set to ch 36 and Meshtastic at ch 104, there is zero overlap. 
-![HaLow ch36](https://github.com/NHOQA/TD-XPAH_Mesh/assets/74009174/b2013d1a-d43d-41f1-96d7-843739974489)
-![meshtastic ch104](https://github.com/NHOQA/TD-XPAH_Mesh/assets/74009174/7d8ed39d-985b-471c-9dcd-49ff503e3885)
