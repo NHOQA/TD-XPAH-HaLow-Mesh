@@ -37,4 +37,7 @@ Notes 2/10/24 <br>
 - Also, including a meshtastic node in this package. Currently meshtastic hardware is running on a private channel on medium/fast settings. need to sort out the frequencies its actually transmitting on so it does not overlap 908.5 and interfere with the HaLow transmission.
 - HaLow 908.5 MHz, Meshtastic ch 33 med/fast per https://meshtastic.org/docs/overview/radio-settings/ is 910.125 MHz. if we go to channel 104 freq. will be 927.875  how much spread will it have from this frequency?
 
-
+Notes 2/11/24 <br>
+- with TD-XPAH set to ch 36 and Meshtastic at ch 104, there is zero overlap. 
+![HaLow ch36](https://github.com/NHOQA/TD-XPAH_Mesh/assets/74009174/b2013d1a-d43d-41f1-96d7-843739974489)
+![meshtastic ch104](https://github.com/NHOQA/TD-XPAH_Mesh/assets/74009174/7d8ed39d-985b-471c-9dcd-49ff503e3885)
