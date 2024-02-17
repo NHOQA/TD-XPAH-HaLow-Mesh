@@ -1,6 +1,8 @@
 Notes:
 Requires full desktop version of latest 64 bit raspbian to work. unknown why lite version doesnt work. The Pi's used are all 4gb Pi 4. HaLow units are Teledatics TD-XPAH V1.5
 
+  - since this image includes a desktop, for the first boot ill go into raspi-config and set to boot directly to console<br> 
+    since we'll never use the desktop again <br>
   -Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/  <br>
   -Install bridge-utils package "apt-get install bridge-utils" 
 
