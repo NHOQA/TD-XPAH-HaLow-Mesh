@@ -14,7 +14,7 @@ Once those pre-requisites are done, set up Pi as follows
 4. Confirm permissions with "sudo chmod 744 ~/fullmesh.sh" and "sudo chmod 644 /etc/systemd/system/fullmesh.service"
 5. Restart systemd "sudo systemctl daemon-reload"
 6. Enable service "sudo systemctl enable fullmesh.service"
-7. Reboot pi, wait 30 seconds for systemd service to run script. can check status w/ "sudo systemctl status fullmesh.service"
+7. Reboot pi, wait 30 seconds for systemd service to run script. can check status w/ "sudo systemctl status fullmesh.service". Note since the script disables network manager, you'll no longer be able to SSH into your pi. To edit anything after this point I just plug a keyboard and monitor directly into the pi
 8. Plug EUD into pi via ethernet port.
 
 At this point you should be able to connect your EUD to the pi via ethernet connection and ping from EUD to other nodes on your mesh (we used termux app and "ping" command)
