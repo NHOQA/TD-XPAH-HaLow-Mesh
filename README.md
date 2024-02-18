@@ -9,7 +9,7 @@ Requires full desktop version of latest 64 bit raspbian to work. unknown why lit
 Once those pre-requisites are done, set up Pi as follows
 
 1. Create dhcp server for bridge. the file eth0.network should be placed in etc/systemd/network  
-2. Full_mesh.sh contents should be saved on Pi. Adjust mesh name, interface names and IP address to fit your wishes
+2. fullmesh.sh contents should be saved on Pi. Adjust mesh name, interface names and IP address to fit your wishes. if you do adjust the script name, make sure to adjust it in fullmesh.service also
 3. Place fullmesh.service in /etc/systemd/system , adjust as needed
 4. Confirm permissions with "sudo chmod 744 ~/fullmesh.sh" and "sudo chmod 644 /etc/systemd/system/fullmesh.service"
 5. Restart systemd "sudo systemctl daemon-reload"
