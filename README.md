@@ -1,3 +1,5 @@
+2/18/24: Uploaded a Pi image with all the stuff below already done. Should work, just will need to edit your device specific stuff in fullmesh.sh, fullmesh.service, and eth0.network. Plus probably the host and username. Let me know if this does not work. Should be about 8GB<br>
+
 Notes:
 Requires full desktop version of latest 64 bit raspbian to work. unknown why lite version doesnt work. The Pi's used are all 4gb Pi 4. HaLow units are Teledatics TD-XPAH V1.5
 
