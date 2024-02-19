@@ -1,4 +1,5 @@
 2/18/24: Uploaded a Pi image with all the stuff below already done. Should work, just will need to edit your device specific stuff in fullmesh.sh, fullmesh.service, and eth0.network. Plus probably the host and username. Let me know if this does not work. Should be about 8GB<br> https://drive.google.com/file/d/1w98dIYALfXgsfjkuJJJLbZ1mVNOHPKv9/view?usp=sharing <br>
+Or if you want to step through everything, continue below <br>
 
 Notes:
 Requires full desktop version of latest 64 bit raspbian to work. unknown why lite version doesnt work. The Pi's used are all 4gb Pi 4. HaLow units are Teledatics TD-XPAH V1.5
@@ -6,6 +7,7 @@ Requires full desktop version of latest 64 bit raspbian to work. unknown why lit
   - since this image includes a desktop, for the first boot ill go into raspi-config and set to boot directly to console<br> 
     since we'll never use the desktop again <br>
   -Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/  <br>
+  - Teledatics image with driver pre-installed https://discord.com/channels/@me/1175046016739856405/1194749506214965298 <br>
   -Install bridge-utils package "apt-get install bridge-utils" 
 
 Once those pre-requisites are done, set up Pi as follows
