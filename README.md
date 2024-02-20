@@ -7,7 +7,7 @@ Requires full desktop version of latest 64 bit raspbian to work. unknown why lit
   - since this image includes a desktop, for the first boot ill go into raspi-config and set to boot directly to console<br> 
     since we'll never use the desktop again <br>
   - Install drivers per teledatics documentation at https://teledatics.com/docs/drivers/  <br>
-  - Teledatics image with driver pre-installed https://discord.com/channels/@me/1175046016739856405/1194749506214965298 <br>
+  - Teledatics image with driver pre-installed https://teledatics.com//image/Teledatics_Raspbian_Bullseye_64bit_8GB_Mesh_20204-Jan-10.zip <br>
   - Install bridge-utils package "apt-get install bridge-utils" 
 
 Once those pre-requisites are done, set up Pi as follows
