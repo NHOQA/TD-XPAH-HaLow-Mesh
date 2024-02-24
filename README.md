@@ -50,7 +50,12 @@ Notes 2/11/24 <br>
 
 2/24/24 Range testing notes <br>
 Worked in a slightly less dense neighborhood compared to home. Cliff notes:
--Mild obstructions (houses trees) , managed to catch a ping out to around 400m, Full obstruction of signal cut down to about 200 meters. at the 200m range signal can be stopped by outting a house in between nodes.
+-Mild obstructions (houses trees) , managed to catch a ping out to around 400m, Full obstruction of signal cut down to about 200 meters. at the 200m range signal can be stopped by putting a house in between nodes.
+
+green markers are first missed packet. yellow markers are pauses in moving to re-establish connection. red is lost connection
+
+It was noted that when losing ping connection, i could stop walking for a few seconds and connection would re-establish. noted by yellow markers.
+base node at around 6' AGL, travel node at about 4' AGL (im just carrying it). HaLow still seems pretty LoS dependent.
 
 Light obstruction, 400m <br>
 ![Screenshot_20240224-124855](https://github.com/NHOQA/TD-XPAH-HaLow-Mesh/assets/74009174/e2f14036-b4b0-448e-82e8-43b2962929ce)
@@ -61,6 +66,6 @@ Heavy obstruction, just under 200m <br>
 light-ish obstruction, ran out of road after 300m, still getting pings <br>
 ![Screenshot_20240224-124659](https://github.com/NHOQA/TD-XPAH-HaLow-Mesh/assets/74009174/92db2247-d8b1-4bc1-9b6c-482c1e155829)
 
-putting this house in between nodes killed signal
+putting this house in between nodes killed signal as soon as it broke Los <br>
 ![Screenshot_20240224-124943](https://github.com/NHOQA/TD-XPAH-HaLow-Mesh/assets/74009174/f94cf895-ff61-49e2-88dd-1445aaaefae9)
 
