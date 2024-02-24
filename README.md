@@ -47,3 +47,20 @@ Notes 2/11/24 <br>
 - with TD-XPAH set to ch 36 and Meshtastic at ch 104, there is zero overlap. 
 ![HaLow ch36](https://github.com/NHOQA/TD-XPAH_Mesh/assets/74009174/08f8a75d-4671-4bcf-bb47-c94b73ed0cbf)
 ![meshtastic ch104](https://github.com/NHOQA/TD-XPAH_Mesh/assets/74009174/711b8379-153c-4b33-99b0-b4ae861c3fd0)
+
+2/24/24 Range testing notes <br>
+Worked in a slightly less dense neighborhood compared to home. Cliff notes:
+-Mild obstructions (houses trees) , managed to catch a ping out to around 400m, Full obstruction of signal cut down to about 200 meters. at the 200m range signal can be stopped by outting a house in between nodes.
+
+Light obstruction, 400m <br>
+![Screenshot_20240224-124855](https://github.com/NHOQA/TD-XPAH-HaLow-Mesh/assets/74009174/e2f14036-b4b0-448e-82e8-43b2962929ce)
+
+Heavy obstruction, just under 200m <br>
+![Screenshot_20240224-124811](https://github.com/NHOQA/TD-XPAH-HaLow-Mesh/assets/74009174/3148cf8d-9441-40a9-997d-d6133721c3cd)
+
+light-ish obstruction, ran out of road after 300m, still getting pings <br>
+![Screenshot_20240224-124659](https://github.com/NHOQA/TD-XPAH-HaLow-Mesh/assets/74009174/92db2247-d8b1-4bc1-9b6c-482c1e155829)
+
+putting this house in between nodes killed signal
+![Screenshot_20240224-124943](https://github.com/NHOQA/TD-XPAH-HaLow-Mesh/assets/74009174/f94cf895-ff61-49e2-88dd-1445aaaefae9)
+
